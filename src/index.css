@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  h1, h2, h3, h4, .font-display {
+    font-family: 'Outfit', 'Plus Jakarta Sans', system-ui, sans-serif;
+  }
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Comic paper / notebook micro-texture utility */
+.comic-border {
+  border: 2px solid #0f172a;
+  box-shadow: 3px 3px 0px #0f172a;
+}
+
+.comic-border-sm {
+  border: 1.5px solid #0f172a;
+  box-shadow: 2px 2px 0px #0f172a;
+}
+
+.comic-border-hover:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #0f172a;
+}
+
+.comic-border-active:active {
+  transform: translate(1px, 1px);
+  box-shadow: 1px 1px 0px #0f172a;
+}
+
